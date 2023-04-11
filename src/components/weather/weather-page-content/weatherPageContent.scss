@@ -4,8 +4,7 @@
     height: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
     padding-left: 70px;
     color: white;
 
@@ -36,9 +35,9 @@
 //1440px
 @media (max-width: 1440px) {
     .weatherPageContent-container {
+        justify-content: space-evenly;
         .weatherPageContent-container_temp {
             h1 {
-
                 font-size: 120px;
             }
             span {
@@ -48,10 +47,10 @@
 
         .weatherPageContent-container_date,
         .weatherPageContent-container_time {
-            font-size: 25px;
+            font-size: 30px;
 
             span {
-                font-size: 21px;
+                font-size: 25px;
             }
         }   
     }
@@ -63,9 +62,11 @@
 
 @media (max-width: 1024px) {
     .weatherPageContent-container {
+        padding: 0;
+        align-items: center;
         .weatherPageContent-container_temp {
+            margin-bottom: 10px;
             h1 {
-
                 font-size: 90px;
             }
             span {
@@ -76,8 +77,8 @@
 
         .weatherPageContent-container_date,
         .weatherPageContent-container_time {
+            margin-bottom: 15px;
             font-size: 22px;
-
             span {
                 font-size: 18px;
             }
@@ -88,8 +89,9 @@
 //768px 
 @media (max-width: 768px) {
     .weatherPageContent-container {
+        padding: 0;
+        align-items: center;
         justify-content: space-evenly;
-        padding-left: 25px;
         .weatherPageContent-container_temp {
             height: 100px;
             h1 {
@@ -105,10 +107,10 @@
 
 
 //425px 
-@media (max-width: 560px) {
+@media (max-width: 425px) {
     .weatherPageContent-container {
         align-items: center;
-        padding-left: 20px;
+        padding: 0;
         .weatherPageContent-container_temp {
             height: 100px;
             h1 {
