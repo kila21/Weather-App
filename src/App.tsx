@@ -8,27 +8,16 @@ import { useEffect } from 'react';
 import './App.scss'
 import WeatherPage from './components/weather/weatherPage';
 import SearchPage from './components/search/searchPage';
+import { getLocFromApi } from './store/weatherThunk';
+import { useAppDispatch } from './store/hooks';
+
 
 function App() {
-  let coordinateLat = 0;
-  let coordinateLon = 0;
+  const dispatch = useAppDispatch()
 
-  // useEffect(() => {
-  //   axios.get(getCityCoordinates('Rustavi'))
-  //   .then((res: AxiosResponse<any, coordinateResponse[]>) => {
-  //     console.log(res.data)
-  //     coordinateLat = res.data[0]?.lat
-  //     coordinateLon = res.data[0]?.lon 
-
-  //     setTimeout(() => {
-  //       axios.get(getCityResponseApi(coordinateLat, coordinateLon)).then(res => {
-  //         console.log(res)
-  //       })
-  //     }, 5000)
-  //   })
-
-  // }, [])
-  
+  useEffect(() => {
+    dispatch(getLocFromApi('Rustavi'))
+  }, [])
 
 
   return (
