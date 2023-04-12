@@ -1,0 +1,43 @@
+
+.weatherPage-container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .weatherPage-container-nextDays {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1024px) {
+    .weatherPage-container {
+        .weatherPage-container-nextDays {
+           
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .weatherPage-container {
+        width: 100%;
+        .weatherPage-container-nextDays {
+            
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .weatherPage-container {
+        width: 100%;
+        .weatherPage-container-nextDays {
+        
+          
+        }
+    }
+}

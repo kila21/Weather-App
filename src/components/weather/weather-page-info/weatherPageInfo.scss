@@ -67,6 +67,7 @@
         margin-top: 20px;
         flex-direction: column;
         width: 100%;
+        height: 120px;
         align-items: center;
         flex-wrap: nowrap;
         .weatherPageInfo-container_content {
@@ -89,6 +90,7 @@
     .weatherPageInfo-container {
         flex-direction: column;
         align-items: center;
+        height: 120px;
         flex-wrap: nowrap;
         .weatherPageInfo-container_content {
             border: none;
