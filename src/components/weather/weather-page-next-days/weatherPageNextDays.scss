@@ -1,0 +1,51 @@
+
+.weatherPageNextDays-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 130px;
+    height: 210px;
+    border-radius: 20px;
+    background: rgba(214, 214, 214, 0.4);
+    box-shadow: 3px -2px 14px -1px rgba(255, 255, 255, 0.6);
+    img {
+        transform: translate(10%, 0);
+    }
+    h3{
+        color: white;
+        font-weight: 400;
+    }
+    p {
+        color: white;
+        font-weight: 400;
+    }
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+    .weatherPageNextDays-container {
+       
+    }
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 768px) {
+    .weatherPageNextDays-container {
+       
+        }
+}
+
+
+//mobile width 100
+@media (max-width: 425px) {
+    .weatherPageNextDays-container {
+        }
+}
