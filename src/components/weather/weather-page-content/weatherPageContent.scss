@@ -1,0 +1,144 @@
+
+.weatherPageContent-container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 70px;
+    color: white;
+
+    .weatherPageContent-container_temp {
+        display: flex;
+        font-weight: 100;
+        line-height: 120px;
+        h1 {
+            font-size: 164px;
+        }
+        span {
+            font-size: 70px;
+            transform: translate(50%, -40%)
+        }
+    }
+
+    .weatherPageContent-container_date,
+    .weatherPageContent-container_time {
+        font-size: 40px;
+
+        span {
+            font-size: 36px;
+        }
+    }
+}
+
+
+//1440px
+@media (max-width: 1440px) {
+    .weatherPageContent-container {
+        justify-content: space-evenly;
+        .weatherPageContent-container_temp {
+            h1 {
+                font-size: 120px;
+            }
+            span {
+                font-size: 40px;
+            }
+        }
+
+        .weatherPageContent-container_date,
+        .weatherPageContent-container_time {
+            font-size: 30px;
+
+            span {
+                font-size: 25px;
+            }
+        }   
+    }
+
+}
+
+
+//1024px
+
+@media (max-width: 1024px) {
+    .weatherPageContent-container {
+        padding: 0;
+        align-items: center;
+        .weatherPageContent-container_temp {
+            margin-bottom: 10px;
+            h1 {
+                font-size: 90px;
+            }
+            span {
+                font-size: 25px;
+                transform: translate(50%, -30%);
+            }
+        }
+
+        .weatherPageContent-container_date,
+        .weatherPageContent-container_time {
+            margin-bottom: 15px;
+            font-size: 22px;
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+//768px 
+@media (max-width: 768px) {
+    .weatherPageContent-container {
+        padding: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        .weatherPageContent-container_temp {
+            height: 100px;
+            h1 {
+                font-size: 60px;
+            }
+            span {
+                font-size: 20px;
+                transform: translate(50%, -20%);
+            }
+        }
+        .weatherPageContent-container_date,
+        .weatherPageContent-container_time {
+            font-size: 26px;
+            // margin-bottom: 18px;
+            span {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+
+//425px 
+@media (max-width: 425px) {
+    .weatherPageContent-container {
+        align-items: center;
+        padding: 0;
+        .weatherPageContent-container_temp {
+            height: 100px;
+            h1 {
+                font-size: 70px;
+            }
+            span {
+                font-size: 30px;
+                transform: translate(50%, -20%);
+            }
+        }
+        .weatherPageContent-container_date,
+        .weatherPageContent-container_time {
+            font-size: 25px;
+            margin-bottom: 18px;
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,21 @@
+
+@import './styles/main.scss';
+
+.page {
+    width: 100%;
+    min-height: 100%;
+    background: $main_background_color;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .page {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .page {
+        flex-direction: column;
+    }
+}
