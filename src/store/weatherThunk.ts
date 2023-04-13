@@ -3,6 +3,7 @@ import axios, { AxiosResponse } from "axios";
 import { getCityCoordinates, getCityResponseApi } from "../../process.env";
 import { getWeather } from "./weatherSlice";
 import { weatherSliceState } from "../types/weatherSliceState.type";
+import { coordinateResponse } from "../types/coordinateResponse.type";
 
 
 export const getWeatherWithCity = (city: string) => {
