@@ -22,9 +22,9 @@ const WeatherPageInfo = () => {
     
     return (
         <div className='weatherPageInfo-container'>
-            {getContent(wind, 'Wind', selector.wind) }
-            {getContent(hum, 'Hum', selector.humidity) }
-            {getContent(rain, 'Rain', selector.rain) }
+            {selector.wind ? getContent(wind, 'Wind', selector.wind) : '' }
+            {selector.humidity ? getContent(hum, 'Hum', selector.humidity) : '' }
+            {selector.rain ? getContent(rain, 'Rain', selector.rain) : '' }
         </div>
     )
 }
