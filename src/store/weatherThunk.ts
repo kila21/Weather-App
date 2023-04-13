@@ -14,6 +14,7 @@ export const getWeatherWithCity = (city: string) => {
 
             await axios.get(getCityResponseApi(lat, lon))
             .then(res => {
+                console.log(res)
                 const data: weatherSliceState = {
                     temperature: res.data.main?.temp-273.15,
                     rain: res.data.rain?.['1h'],
@@ -26,7 +27,7 @@ export const getWeatherWithCity = (city: string) => {
         })
         .catch(res => {
             // some logic
-            console.log(res.data)
+            alert('Sorry, Smth went Wrong, Try Later or Refresh Page')
             return res.data
         })
 
@@ -46,6 +47,10 @@ export const getWeatherWithCoords = (lat: number, lon: number) => {
             }
 
             return dispatch(getWeather(data))
+        })
+        .catch(err => {
+            alert('Sorry, Smth went Wrong, Try Later or Refresh Page')
+            return err.data
         })
     }
 }

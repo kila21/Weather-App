@@ -3,6 +3,7 @@ import './weatherPageNextDays.scss'
 import cloud from '../../../images/WeatherIcon-cloud.svg'
 
 
+
 const WeatherPageNextDays = (props: {day: string, temp: string}) => {
     return (
         <div className='weatherPageNextDays-container'>

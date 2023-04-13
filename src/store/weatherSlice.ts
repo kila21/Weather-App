@@ -15,7 +15,6 @@ const weatherSlice = createSlice({
     initialState,
     reducers: {
         getWeather: (state,action) => {
-            console.log(action)
             state.humidity = action.payload.humidity,
             state.rain = action.payload.rain,
             state.wind = action.payload.wind,

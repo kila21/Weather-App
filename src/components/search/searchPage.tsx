@@ -18,9 +18,9 @@ const SearchPage =  () => {
 
     useEffect(()=> {
         const timer = setTimeout(()=> {
-            console.log('useffect')
-            console.log(value)
-           dispatch(getWeatherWithCity(value))
+            if(value) {
+                dispatch(getWeatherWithCity(value))
+            }
         }, 2000)
 
         return () => clearTimeout(timer)
