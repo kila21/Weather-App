@@ -1,4 +1,4 @@
-type coordinateResponse = {
+export type coordinateResponse = {
     country: string,
     lat: number,
     lon: number,
