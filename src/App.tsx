@@ -1,8 +1,4 @@
 
-import axios  from 'axios';
-import { AxiosResponse } from 'axios'
-
-import { getCityCoordinates, getCityResponseApi } from '../process.env'
 import { useEffect } from 'react';
  
 import './App.scss'

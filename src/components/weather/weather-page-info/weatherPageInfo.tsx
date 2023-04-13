@@ -14,7 +14,7 @@ const WeatherPageInfo = () => {
             <div className='weatherPageInfo-container_content'>
                 <img src={imgURl} alt={text}/>
                 <p>{text}</p>
-                {info ? <p>{info}{text === 'Wind' ? 'KM/H' : '%'}</p> : ''}
+                {info ? <p>{info}{text === 'Wind' ? ' KM/H' : '%'}</p> : ''}
             </div>
         )
         return container;
